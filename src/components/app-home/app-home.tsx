@@ -10,16 +10,16 @@ export class AppHome {
 
   componentWillLoad(){
     this.items = [
-      {uid: 1, subject: 'hello', message: 'hello'},
-      {uid: 2, subject: 'hello', message: 'hello'},
-      {uid: 3, subject: 'hello', message: 'hello'},
-      {uid: 4, subject: 'hello', message: 'hello'},
-      {uid: 5, subject: 'hello', message: 'hello'},
-      {uid: 6, subject: 'hello', message: 'hello'},
-      {uid: 7, subject: 'hello', message: 'hello'},
-      {uid: 8, subject: 'hello', message: 'hello'},
-      {uid: 9, subject: 'hello', message: 'hello'},
-      {uid: 10, subject: 'hello', message: 'hello'}
+      {uid: 1, subject: 'Swipe to Delete', message: 'Swipe to Delete'},
+      {uid: 2, subject: 'Swipe to Delete', message: 'Swipe to Delete'},
+      {uid: 3, subject: 'Swipe to Delete', message: 'Swipe to Delete'},
+      {uid: 4, subject: 'Swipe to Delete', message: 'Swipe to Delete'},
+      {uid: 5, subject: 'Swipe to Delete', message: 'Swipe to Delete'},
+      {uid: 6, subject: 'Swipe to Delete', message: 'Swipe to Delete'},
+      {uid: 7, subject: 'Swipe to Delete', message: 'Swipe to Delete'},
+      {uid: 8, subject: 'Swipe to Delete', message: 'Swipe to Delete'},
+      {uid: 9, subject: 'Swipe to Delete', message: 'Swipe to Delete'},
+      {uid: 10, subject: 'Swipe to Delete', message: 'Swipe to Delete'}
     ]
   }
 
@@ -34,7 +34,7 @@ export class AppHome {
       <ion-content>
         <ion-list>
           {this.items.map((item) => (
-            <app-swipe-delete key={item.uid} onDeleted={() => this.handleDelete(item.uid)}>{item.subject}</app-swipe-delete>
+            <app-swipe-delete key={item.uid} onDeleted={() => this.handleDelete(item.uid)}><p>{item.subject}</p></app-swipe-delete>
           ))}
         </ion-list>
       </ion-content>

@@ -20,7 +20,6 @@ export class SwipeDelete {
     const hostDeleteAnimation = createAnimation()
     .addElement(this.hostElement)
     .duration(200)
-    .delay(200)
     .easing('ease-out')
     .fromTo('height', '48px', '0');
 
